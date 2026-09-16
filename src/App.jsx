@@ -65,7 +65,9 @@ const toIntlPhone = (raw) => {
   return digits;
 };
 const reminderMessage = (a) =>
-  `Hi ${a.clientName}, this is a reminder from Darshana Ayurveda for your appointment on ${fullDateLabel(a.dateKey)} at ${minutesToLabel(a.startMin)}. See you soon!`;
+  const reminderMessage = (a) =>
+  `Hi ${a.clientName} 👋\n\nJust a friendly reminder from Darshana Ayurveda about your appointment on ${fullDateLabel(a.dateKey)} at ${minutesToLabel(a.startMin)}.\n\nWe look forward to seeing you! 🌿`;
+
 
 function playChime(kind) {
   try {
