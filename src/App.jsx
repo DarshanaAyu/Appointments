@@ -6,6 +6,7 @@ import {
 import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid,
 } from "recharts";
+import logoMark from "./assets/darshana-mark.png";
 
 /* ---------------------------------- palette ---------------------------------- */
 const C = {
@@ -274,11 +275,13 @@ export default function App() {
 
       <div className="w-full max-w-sm rounded-3xl shadow-xl flex flex-col" style={{ backgroundColor: C.ivory, height: "min(800px, 92vh)", overflow: "hidden" }}>
         <div style={{ backgroundColor: C.forest, flexShrink: 0 }} className="px-5 pt-6 pb-4">
-          <div className="flex items-center gap-2">
-            <LeafMark />
+          <div className="flex items-center gap-3">
+            <div className="rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: C.ivory, width: 42, height: 42, padding: 4 }}>
+              <img src={logoMark} alt="Darshana Ayurveda" style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
+            </div>
             <div>
-              <div className="serif italic text-lg leading-none" style={{ color: C.ivory }}>Darshana</div>
-              <div className="text-[11px] tracking-wide" style={{ color: C.sage }}>AYURVEDA · STUDIO</div>
+              <div className="serif italic text-lg leading-none" style={{ color: C.ivory }}>Darshana Ayurveda</div>
+              <div className="text-[10px] tracking-wide mt-1" style={{ color: C.sage }}>DR. DARSHANA DISSANAYAKA</div>
             </div>
           </div>
           <div className="mt-4"><BotanicalDivider /></div>
